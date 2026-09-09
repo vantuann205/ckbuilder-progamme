@@ -1,0 +1,39 @@
+{
+  "name": "ckb-test-contract",
+  "version": "0.1.0",
+  "description": "CKB JavaScript Smart Contract project",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:contract": "node scripts/build-contract.js",
+    "build:contract:debug": "node scripts/build-contract.js --debug",
+    "build": "node scripts/build-all.js",
+    "build:debug": "node scripts/build-all.js --debug",
+    "deploy": "node scripts/deploy.js",
+    "deploy:build": "run-s build deploy",
+    "deploy:debug": "run-s build:debug deploy",
+    "test": "run-s build test:only",
+    "test:only": "jest",
+    "add-contract": "node scripts/add-contract.js",
+    "clean": "rimraf dist",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@ckb-js-std/bindings": "~1.0.0",
+    "@ckb-js-std/core": "~1.0.0",
+    "dotenv": "^17.2.1"
+  },
+  "devDependencies": {
+    "ckb-testtool": "1.0.5",
+    "@ckb-ccc/core": "1.12.2",
+    "esbuild": "~0.25.8",
+    "jest": "~29.7.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "typescript": "~5.8.2",
+    "ts-jest": "~29.2.6",
+    "@types/node": "~22.13.8",
+    "@types/jest": "~29.5.14"
+  }
+}
