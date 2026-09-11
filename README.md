@@ -1,42 +1,40 @@
 # CKBuilder Programme
 
-Personal development log and CKB JavaScript smart-contract workspace for the CKBuilder Programme.
+Personal CKBuilder development log for learning and building on Nervos CKB.
 
-## Repository purpose
+## Repository standard
 
-This repository records practical learning, reproducible development steps, source code, and evidence from the CKB JavaScript VM track. The current work covers the OffCKB quick-start workflow on a local CKB devnet.
+This repository follows the programme requirements: one contemporaneous report per week, published on GitHub on a fixed reporting day, with honest learnings, progress, blockers, and supporting evidence.
 
-## Current report
+## Weekly navigation
 
-- Reporting date: 2026-09-09
-- Handbook area: `Introduction → Getting started on CKB → Quick start`
-- Status: Completed on local devnet
-- Weekly report: [2026-09-09 OffCKB Quick Start](reports/2026-09-09-offckb-quick-start.md)
-- Evidence report: [Google Docs evidence report](https://docs.google.com/document/d/1qNiuSVb2z2RwFDB8u9a_m5jr9kOsDyOVnpcKqzrT_n8/edit)
-- Source handbook: [CKB Builder Handbook](https://docs.google.com/document/d/1aFHXU1ZL1MyIbBAIVRjG6stqdWwPUPyHV90O1QNwY-M/edit?tab=t.0)
+| Week | Focus | Status | Report |
+| --- | --- | --- | --- |
+| Week 1 | CKB fundamentals, local environment, and first contract | In progress | [Week 1 report](reports/week-01.md) |
 
-## Project scope
+Future weeks will use the same structure: `reports/week-XX.md`, `notes/week-XX/`, and `evidence/week-XX/`.
 
-- Start a local CKB devnet with OffCKB.
-- Inspect pre-funded development accounts.
-- Build a TypeScript CKB JavaScript VM contract.
-- Deploy the compiled contract to the local devnet.
-- Preserve deployment metadata and migration artifacts.
+## Week 1 scope
+
+Week 1 follows the [CKB Builder Handbook](https://docs.google.com/document/d/1aFHXU1ZL1MyIbBAIVRjG6stqdWwPUPyHV90O1QNwY-M/edit?tab=t.0):
+
+`Introduction → Introduction to Nervos CKB → Getting started on CKB → Quick start`
+
+It also covers the handbook's Introduction to Script material and the required start of CKB Academy Lessons 1 and 2. The [CKBuilder Terms and Conditions](https://docs.google.com/document/d/1NVnc0HPuYsFNL8dxLiLJIVoPRStYFP7xoCEO2VJ5K-s/edit?tab=t.0) require weekly GitHub reporting, course progress, scores where applicable, key learnings, and evidence.
 
 ## Repository structure
 
 ```text
-contracts/       Smart-contract source code
+contracts/       CKB JavaScript VM contract source
 deployment/      Deployment configuration and migration artifacts
-reports/         Date-based CKBuilder development reports
-scripts/         Build, deployment, and project utility scripts
+evidence/        Evidence grouped by onboarding or programme week
+notes/           Study notes grouped by programme week
+reports/         One dated report per programme week
+scripts/         Build and deployment utilities
 tests/           Contract test sources
-package.json     Project scripts and dependencies
 ```
 
-## Reproducible workflow
-
-Prerequisites: Node.js 20+, pnpm, and OffCKB.
+## Development workflow
 
 ```bash
 pnpm install
@@ -46,12 +44,8 @@ pnpm run build
 pnpm run deploy
 ```
 
-Keep the `offckb node` process running while building or deploying to the local devnet. The deployment script targets the devnet by default and writes artifacts under `deployment/`.
+The existing [onboarding evidence report](reports/2026-09-09-offckb-quick-start.md) records the local devnet, build, and deployment completed before Week 1 began. It is supporting evidence, not a replacement for the Week 1 report.
 
-## Scope note
+## Scope and integrity
 
-This repository documents local-devnet work only. It is not evidence of Testnet/Mainnet deployment, production readiness, a security audit, or a passing automated test suite.
-
-## License
-
-MIT
+The repository documents local-devnet work only. It does not claim Testnet/Mainnet deployment, production readiness, security audit completion, or a passing automated test suite unless separately evidenced.
