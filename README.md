@@ -10,7 +10,7 @@ This repository follows the programme requirements: one contemporaneous report p
 
 | Week | Focus | Status | Report |
 | --- | --- | --- | --- |
-| Week 1 | CKB fundamentals, local environment, and first contract | In progress | [Week 1 report](reports/week-01.md) |
+| Week 1 | CKB fundamentals, local environment, transactions, and Cell data | Completed | [Week 1 report](reports/week-01.md) |
 
 Future weeks will use the same structure: `reports/week-XX.md`, `notes/week-XX/`, and `evidence/week-XX/`.
 
