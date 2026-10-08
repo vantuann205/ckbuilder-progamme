@@ -20,3 +20,5 @@ My development log for learning and building on Nervos CKB.
 - [Week 2 evidence](evidence/week-02/README.md)
 - [Week 3 report](reports/week-03.md)
 - [Week 3 evidence](evidence/week-03/README.md)
+- [Week 4 report](reports/week-04.md)
+- [Week 4 evidence](evidence/week-04/README.md)
