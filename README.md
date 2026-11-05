@@ -11,6 +11,7 @@ My development log for learning and building on Nervos CKB.
 - Creating and rendering a Spore digital object.
 - Building, deploying, funding, and unlocking a simple hash-lock Script.
 - Checking occupied-capacity requirements before submitting a transaction.
+- Using CKB-VM process spawning and IPC to connect parent and child Scripts.
 
 ## Weekly report
 
@@ -28,3 +29,5 @@ My development log for learning and building on Nervos CKB.
 - [Week 6 evidence](evidence/week-06/README.md)
 - [Week 7 report](reports/week-07.md)
 - [Week 7 evidence](evidence/week-07/README.md)
+- [Week 8 report](reports/week-08.md)
+- [Week 8 evidence](evidence/week-08/README.md)

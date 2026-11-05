@@ -1,0 +1,8 @@
+running 1 test
+test tests::test_spawn ... [contract debug] Spawn Parent PID: 0 !
+[contract debug] Spawn Child PID: 1 !
+[contract debug] Checked
+consume cycles: 141830
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 22 filtered out; finished in 0.04s
